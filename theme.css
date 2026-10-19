@@ -1,0 +1,52 @@
+/*
+ * THEME: colours and fonts for the whole site.
+ * Change a value here and it updates everywhere.
+ * If you change fonts, also update the Google Fonts <link> in index.html.
+ */
+:root {
+  /* Palette */
+  --violet-deep: #342545;
+  --amethyst: #77609B;
+  --lavender: #B8A4D1;
+  --gold: #D0AB75;
+  --gold-bright: #F3D9A4;
+  --sage: #627762;
+  --ivory: #EEE4D7;
+  --charcoal: #201B26;
+
+  /* Roles */
+  --bg: #160F22;              /* page background */
+  --surface: #241A36;         /* panels, cards */
+  --surface-2: #30234A;       /* raised elements, inputs */
+  --line: rgba(208, 171, 117, 0.32);
+  --text: #EEE4D7;
+  --text-soft: #CDBEDA;
+  --text-faint: #A497AE;
+  --accent: var(--gold);
+  --accent-ink: #1C1622;      /* text on gold buttons */
+  --focus: #F3D9A4;
+
+  --rose: #D9A6C8;            /* dusk pink from the painted skies */
+  --indigo: #1E1638;
+  --candle: #FFD58A;
+  --ornament: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 28'%3E%3Cpath d='M0 26H78c14 0 24-6 32-16l10-8 10 8c8 10 18 16 32 16h78' fill='none' stroke='%23D0AB75' stroke-width='1.3'/%3E%3Cpath d='M120 6v14M114 12h12' stroke='%23F3D9A4' stroke-width='1.4'/%3E%3Ccircle cx='60' cy='26' r='1.8' fill='%23D0AB75'/%3E%3Ccircle cx='180' cy='26' r='1.8' fill='%23D0AB75'/%3E%3C/svg%3E");
+
+  /* Claim tags in articles */
+  --tag-scripture: #8FB3E0;
+  --tag-tradition: #D0AB75;
+  --tag-history: #9DBB97;
+  --tag-interpretation: #C9A3D6;
+  --tag-practice: #E0B9A0;
+
+  /* Type */
+  --font-display: "Cormorant Garamond", "Iowan Old Style", Georgia, serif;
+  --font-sign: "Cinzel", "Trajan Pro", Georgia, serif;
+  --font-body: "Lora", Georgia, "Times New Roman", serif;
+
+  /* Sizes */
+  --header-h: 60px;
+  --radius: 14px;
+  --radius-sm: 8px;
+
+  color-scheme: dark;
+}

@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <!-- PLACEHOLDER ART: The Marian Chapel. Replace with a painted scene; keep hotspot positions in data/places.js in sync. -->
+  <defs>
+    <linearGradient id="vault" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#141A3A"/><stop offset="1" stop-color="#2E2752"/></linearGradient>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2B2A55"/><stop offset="1" stop-color="#3D3060"/></linearGradient>
+    <radialGradient id="alcove" cx="0.5" cy="0.45" r="0.6"><stop offset="0" stop-color="#C9D4F5"/><stop offset="0.45" stop-color="#6E7FC4"/><stop offset="1" stop-color="#2A2E66"/></radialGradient>
+    <linearGradient id="robe" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F3EFF8"/><stop offset="0.5" stop-color="#C8D2F0"/><stop offset="1" stop-color="#7C8FD0"/></linearGradient>
+    <linearGradient id="mantle" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#3D5AA8"/><stop offset="0.5" stop-color="#6E86D0"/><stop offset="1" stop-color="#3D5AA8"/></linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3A3358"/><stop offset="1" stop-color="#15121F"/></linearGradient>
+    <linearGradient id="wood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6A4632"/><stop offset="1" stop-color="#36221A"/></linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#FFE2A8" stop-opacity="0.6"/><stop offset="1" stop-color="#FFE2A8" stop-opacity="0"/></radialGradient>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="14"/></filter>
+    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="table" tableValues="0 0.08"/></feComponentTransfer></filter>
+  
+    <filter id="paint" x="-3%" y="-3%" width="106%" height="106%" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency="0.011 0.016" numOctaves="3" seed="11" result="warp"/>
+      <feDisplacementMap in="SourceGraphic" in2="warp" scale="11" xChannelSelector="R" yChannelSelector="G" result="wobble"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="4" seed="51" result="wash"/>
+      <feColorMatrix in="wash" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 -1.1 0.62" result="washA"/>
+      <feComposite in="wobble" in2="washA" operator="arithmetic" k1="0" k2="1" k3="-0.18" k4="0.06" result="washed"/>
+      <feGaussianBlur in="washed" stdDeviation="0.7"/>
+    </filter>
+    <filter id="bloom" x="-10%" y="-10%" width="120%" height="120%" color-interpolation-filters="sRGB">
+      <feColorMatrix type="matrix" values="1.4 0 0 0 -0.45  0 1.3 0 0 -0.45  0 0 1.1 0 -0.4  0 0 0 1 0"/>
+      <feGaussianBlur stdDeviation="16"/>
+    </filter>
+    <filter id="fly" x="-200%" y="-200%" width="500%" height="500%"><feGaussianBlur stdDeviation="3"/></filter>
+    <filter id="paper"><feTurbulence type="fractalNoise" baseFrequency="0.6 0.9" numOctaves="3" seed="91"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="table" tableValues="0 0.14"/></feComponentTransfer></filter>
+    <radialGradient id="vig" cx="0.5" cy="0.48" r="0.75"><stop offset="0.55" stop-color="#140C1E" stop-opacity="0"/><stop offset="1" stop-color="#140C1E" stop-opacity="0.75"/></radialGradient>
+    <linearGradient id="grade" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#B07AD8"/><stop offset="0.55" stop-color="#5A3C8C"/><stop offset="1" stop-color="#F0A86A"/></linearGradient>
+    <radialGradient id="ray" cx="0.5" cy="0" r="1"><stop offset="0" stop-color="#FFF2CF" stop-opacity="0.55"/><stop offset="1" stop-color="#FFF2CF" stop-opacity="0"/></radialGradient>
+  </defs>
+  <g id="scene" filter="url(#paint)">
+
+  <rect width="1600" height="900" fill="url(#wall)"/>
+  <path d="M0 0 H1600 V260 Q800 -60 0 260 Z" fill="url(#vault)"/>
+  <g fill="#E9D9A6">
+    <circle cx="200" cy="120" r="3"/><circle cx="340" cy="70" r="2.5"/><circle cx="480" cy="40" r="3"/><circle cx="640" cy="30" r="2"/><circle cx="960" cy="30" r="2"/><circle cx="1120" cy="40" r="3"/><circle cx="1260" cy="70" r="2.5"/><circle cx="1400" cy="120" r="3"/>
+    <circle cx="420" cy="130" r="2"/><circle cx="1180" cy="130" r="2"/><circle cx="300" cy="190" r="2"/><circle cx="1300" cy="190" r="2"/>
+  </g>
+  <path d="M0 260 Q800 -60 1600 260" fill="none" stroke="#D0AB75" stroke-width="3" opacity="0.6"/>
+
+  <!-- side lancets -->
+  <g>
+    <path d="M150 560 V320 Q190 260 230 320 V560 Z" fill="#4A63B8"/>
+    <path d="M1370 560 V320 Q1410 260 1450 320 V560 Z" fill="#4A63B8"/>
+    <g stroke="#1D1A36" stroke-width="4"><path d="M190 290 V560 M150 400 H230 M150 480 H230 M1410 290 V560 M1370 400 H1450 M1370 480 H1450"/></g>
+    <g fill="#B8A4D1" opacity="0.8"><rect x="158" y="410" width="24" height="62"/><rect x="1418" y="410" width="24" height="62"/></g>
+    <ellipse cx="190" cy="430" rx="80" ry="160" fill="#7C8FD0" opacity="0.18" filter="url(#blur)"/>
+    <ellipse cx="1410" cy="430" rx="80" ry="160" fill="#7C8FD0" opacity="0.18" filter="url(#blur)"/>
+  </g>
+
+  <!-- alcove -->
+  <path d="M590 660 V300 Q590 140 800 110 Q1010 140 1010 300 V660 Z" fill="#1D1A36"/>
+  <path d="M620 660 V310 Q620 170 800 142 Q980 170 980 310 V660 Z" fill="url(#alcove)"/>
+  <ellipse cx="800" cy="360" rx="220" ry="280" fill="#E6ECFF" opacity="0.18" filter="url(#blur)"/>
+
+  <!-- crown of twelve stars -->
+  <g fill="#F3DDA8">
+    <circle cx="704" cy="246" r="6"/><circle cx="718" cy="220" r="6"/><circle cx="738" cy="198" r="6"/><circle cx="762" cy="182" r="6"/><circle cx="788" cy="174" r="6"/><circle cx="814" cy="174" r="6"/>
+    <circle cx="840" cy="182" r="6"/><circle cx="864" cy="198" r="6"/><circle cx="884" cy="220" r="6"/><circle cx="898" cy="246" r="6"/><circle cx="694" cy="274" r="6"/><circle cx="906" cy="274" r="6"/>
+  </g>
+
+  <!-- robed figure (simple, faceless) -->
+  <g>
+    <circle cx="800" cy="282" r="72" fill="#FFF3D6" opacity="0.35" filter="url(#blur)"/>
+    <path d="M800 236 C842 236 862 270 860 312 C900 360 912 470 930 600 H670 C688 470 700 360 740 312 C738 270 758 236 800 236 Z" fill="url(#mantle)"/>
+    <path d="M800 262 C828 262 840 290 838 318 C858 380 864 480 870 600 H730 C736 480 742 380 762 318 C760 290 772 262 800 262 Z" fill="url(#robe)"/>
+    <ellipse cx="800" cy="296" rx="26" ry="32" fill="#F6EBDD"/>
+    <path d="M774 300 C774 272 786 258 800 258 C814 258 826 272 826 300 C820 284 812 276 800 276 C788 276 780 284 774 300 Z" fill="#E8EEFC"/>
+    <path d="M778 410 C790 396 810 396 822 410 L812 430 C806 424 794 424 788 430 Z" fill="#F6EBDD"/>
+    <path d="M700 600 Q800 640 900 600 L930 620 H670 Z" fill="#2E3E80"/>
+  </g>
+
+  <!-- pedestal and lilies -->
+  <rect x="680" y="620" width="240" height="40" fill="#5A4A78"/>
+  <g>
+    <path d="M640 660 L654 600 H690 L704 660 Z" fill="#B8A4D1"/>
+    <path d="M896 660 L910 600 H946 L960 660 Z" fill="#B8A4D1"/>
+    <g stroke="#3E5A3E" stroke-width="4" stroke-linecap="round"><path d="M672 600 V500"/><path d="M664 602 L644 520"/><path d="M680 602 L700 524"/><path d="M928 600 V500"/><path d="M920 602 L900 520"/><path d="M936 602 L956 524"/></g>
+    <g fill="#FBF6EC">
+      <path d="M672 500 l-14 -24 l14 8 l14 -8 Z"/><path d="M644 520 l-14 -22 l14 7 l12 -9 Z"/><path d="M700 524 l-12 -22 l14 6 l12 -8 Z"/>
+      <path d="M928 500 l-14 -24 l14 8 l14 -8 Z"/><path d="M900 520 l-14 -22 l14 7 l12 -9 Z"/><path d="M956 524 l-12 -22 l14 6 l12 -8 Z"/>
+    </g>
+  </g>
+
+  <!-- floor -->
+  <path d="M0 660 H1600 V900 H0 Z" fill="url(#floor)"/>
+  <g stroke="#2A2440" stroke-width="2" opacity="0.8"><path d="M0 720 H1600 M0 800 H1600"/><path d="M300 660 L220 900 M600 660 L570 900 M1000 660 L1030 900 M1300 660 L1380 900"/></g>
+
+  <!-- votive candles in front -->
+  <g>
+    <rect x="600" y="680" width="400" height="26" fill="#2A2238"/>
+    <g fill="#B8A4D1" opacity="0.9">
+      <rect x="616" y="664" width="18" height="18" rx="3"/><rect x="648" y="664" width="18" height="18" rx="3"/><rect x="680" y="664" width="18" height="18" rx="3"/><rect x="712" y="664" width="18" height="18" rx="3"/><rect x="744" y="664" width="18" height="18" rx="3"/>
+      <rect x="840" y="664" width="18" height="18" rx="3"/><rect x="872" y="664" width="18" height="18" rx="3"/><rect x="904" y="664" width="18" height="18" rx="3"/><rect x="936" y="664" width="18" height="18" rx="3"/><rect x="968" y="664" width="18" height="18" rx="3"/>
+    </g>
+    <g fill="#FFE2A8">
+      <path d="M625 662 c-4 -6 -4 -11 0 -16 c4 5 4 10 0 16 Z"/><path d="M689 662 c-4 -6 -4 -11 0 -16 c4 5 4 10 0 16 Z"/><path d="M721 662 c-4 -6 -4 -11 0 -16 c4 5 4 10 0 16 Z"/>
+      <path d="M849 662 c-4 -6 -4 -11 0 -16 c4 5 4 10 0 16 Z"/><path d="M913 662 c-4 -6 -4 -11 0 -16 c4 5 4 10 0 16 Z"/><path d="M977 662 c-4 -6 -4 -11 0 -16 c4 5 4 10 0 16 Z"/>
+    </g>
+    <ellipse cx="800" cy="670" rx="240" ry="50" fill="url(#glow)" opacity="0.7"/>
+  </g>
+
+  <!-- prie-dieu with rosary, left -->
+  <g>
+    <path d="M330 700 L360 600 H520 L540 700 Z" fill="url(#wood)"/>
+    <rect x="320" y="700" width="230" height="20" fill="#36221A"/>
+    <rect x="330" y="760" width="210" height="26" rx="6" fill="#5A3E86"/>
+    <rect x="344" y="720" width="14" height="70" fill="#36221A"/><rect x="512" y="720" width="14" height="70" fill="#36221A"/>
+    <path d="M380 620 C400 680 470 690 500 620" fill="none" stroke="#D0AB75" stroke-width="2" stroke-dasharray="1 9" stroke-linecap="round"/>
+    <path d="M440 670 V700 M432 690 H448" stroke="#D0AB75" stroke-width="3"/>
+  </g>
+
+  <!-- book stand, right -->
+  <g>
+    <rect x="1162" y="640" width="14" height="140" fill="#36221A"/>
+    <path d="M1100 640 L1240 640 L1220 600 L1120 600 Z" fill="url(#wood)"/>
+    <path d="M1118 604 L1170 596 L1222 604 L1218 626 L1170 620 L1122 626 Z" fill="#EEE4D7"/>
+    <path d="M1170 596 V620" stroke="#B8A4D1" stroke-width="2"/>
+    <rect x="1130" y="780" width="80" height="12" fill="#36221A"/>
+  </g>
+
+  <!-- doorway back to cathedral, far left -->
+  <path d="M30 820 V500 Q30 420 100 400 Q170 420 170 500 V820 Z" fill="#141022"/>
+  <path d="M48 820 V506 Q48 440 100 424 Q152 440 152 506 V820 Z" fill="#4A63B8" opacity="0.35"/>
+
+  <g fill="#E8EEFC" opacity="0.7"><circle cx="560" cy="420" r="2"/><circle cx="1050" cy="380" r="2.5"/><circle cx="1000" cy="520" r="2"/><circle cx="600" cy="300" r="2"/></g>
+  </g>
+  <use href="#scene" filter="url(#bloom)" opacity="0.55" style="mix-blend-mode:screen"/>
+  <g><path d="M760 120 L840 120 L1060.0 900 L540.0 900 Z" fill="url(#ray)" opacity="0.32" style="mix-blend-mode:screen"/><path d="M150 300 L230 300 L340.0 900 L40.0 900 Z" fill="url(#ray)" opacity="0.32" style="mix-blend-mode:screen"/><path d="M1370 300 L1450 300 L1560.0 900 L1260.0 900 Z" fill="url(#ray)" opacity="0.32" style="mix-blend-mode:screen"/></g>
+  <rect width="1600" height="900" fill="url(#grade)" opacity="0.22" style="mix-blend-mode:soft-light"/>
+  <g><circle cx="735" cy="478" r="9.9" fill="#E9F09A" opacity="0.35" filter="url(#fly)"/><circle cx="735" cy="478" r="3.1" fill="#FBFFD8"/><circle cx="753" cy="445" r="8.1" fill="#E9F09A" opacity="0.35" filter="url(#fly)"/><circle cx="753" cy="445" r="2.5" fill="#FBFFD8"/><circle cx="371" cy="448" r="8.3" fill="#E9F09A" opacity="0.35" filter="url(#fly)"/><circle cx="371" cy="448" r="2.6" fill="#FBFFD8"/><circle cx="1198" cy="180" r="6.7" fill="#E9F09A" opacity="0.35" filter="url(#fly)"/><circle cx="1198" cy="180" r="2.1" fill="#FBFFD8"/><circle cx="243" cy="638" r="8.7" fill="#E9F09A" opacity="0.35" filter="url(#fly)"/><circle cx="243" cy="638" r="2.7" fill="#FBFFD8"/><circle cx="177" cy="749" r="10.1" fill="#E9F09A" opacity="0.35" filter="url(#fly)"/><circle cx="177" cy="749" r="3.1" fill="#FBFFD8"/><circle cx="1009" cy="514" r="5.9" fill="#E9F09A" opacity="0.35" filter="url(#fly)"/><circle cx="1009" cy="514" r="1.9" fill="#FBFFD8"/><circle cx="140" cy="458" r="5.4" fill="#E9F09A" opacity="0.35" filter="url(#fly)"/><circle cx="140" cy="458" r="1.7" fill="#FBFFD8"/><circle cx="379" cy="275" r="5.3" fill="#E9F09A" opacity="0.35" filter="url(#fly)"/><circle cx="379" cy="275" r="1.6" fill="#FBFFD8"/><circle cx="751" cy="402" r="9.4" fill="#E9F09A" opacity="0.35" filter="url(#fly)"/><circle cx="751" cy="402" r="2.9" fill="#FBFFD8"/><circle cx="826" cy="530" r="7.7" fill="#E9F09A" opacity="0.35" filter="url(#fly)"/><circle cx="826" cy="530" r="2.4" fill="#FBFFD8"/><circle cx="1021" cy="413" r="6.5" fill="#E9F09A" opacity="0.35" filter="url(#fly)"/><circle cx="1021" cy="413" r="2.0" fill="#FBFFD8"/><circle cx="1477" cy="757" r="9.4" fill="#E9F09A" opacity="0.35" filter="url(#fly)"/><circle cx="1477" cy="757" r="2.9" fill="#FBFFD8"/><circle cx="1083" cy="322" r="6.3" fill="#E9F09A" opacity="0.35" filter="url(#fly)"/><circle cx="1083" cy="322" r="2.0" fill="#FBFFD8"/><circle cx="513" cy="165" r="9.0" fill="#E9F09A" opacity="0.35" filter="url(#fly)"/><circle cx="513" cy="165" r="2.8" fill="#FBFFD8"/><circle cx="665" cy="662" r="7.1" fill="#E9F09A" opacity="0.35" filter="url(#fly)"/><circle cx="665" cy="662" r="2.2" fill="#FBFFD8"/></g>
+  <rect width="1600" height="900" fill="url(#vig)"/>
+  <rect width="1600" height="900" filter="url(#paper)"/>
+</svg>

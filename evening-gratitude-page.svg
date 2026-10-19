@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="8.5in" height="11in" viewBox="0 0 850 1100">
+  <title>Evening Gratitude Page – The Violet Sanctuary (free printable)</title>
+  <rect width="850" height="1100" fill="#FFFFFF"/>
+  <rect x="40" y="40" width="770" height="1020" fill="none" stroke="#D0AB75" stroke-width="2"/>
+  <circle cx="425" cy="110" r="24" fill="#F3DDA8"/><circle cx="437" cy="102" r="22" fill="#FFFFFF"/>
+  <text x="425" y="180" text-anchor="middle" font-family="Georgia, serif" font-size="34" fill="#342545">Evening Gratitude</text>
+  <text x="425" y="214" text-anchor="middle" font-family="Georgia, serif" font-size="15" fill="#77609B">Date: ______________________</text>
+  <g font-family="Georgia, serif" font-size="17" fill="#342545">
+    <text x="100" y="290">Three things I'm thankful for today</text>
+    <text x="100" y="500">Where did I notice kindness, or grace?</text>
+    <text x="100" y="680">What would I like to set down tonight?</text>
+    <text x="100" y="860">Someone I'd like to hold in prayer</text>
+  </g>
+  <g stroke="#E3D8EE" stroke-width="1.2">
+    <path d="M100 330H750M100 370H750M100 410H750M100 450H750"/>
+    <path d="M100 540H750M100 580H750M100 620H750"/>
+    <path d="M100 720H750M100 760H750M100 800H750"/>
+    <path d="M100 900H750M100 940H750"/>
+  </g>
+  <text x="425" y="1010" text-anchor="middle" font-family="Georgia, serif" font-size="15" font-style="italic" fill="#77609B">"I will both lay me down in peace, and sleep." – Psalm 4:8 (KJV)</text>
+  <text x="425" y="1086" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#9A8AAE">The Violet Sanctuary · free to print for personal use</text>
+</svg>

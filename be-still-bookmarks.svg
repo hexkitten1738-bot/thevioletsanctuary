@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="8.5in" height="11in" viewBox="0 0 850 1100">
+  <title>"Be Still" Bookmarks – The Violet Sanctuary (free printable)</title>
+  <rect width="850" height="1100" fill="#FFFFFF"/>
+  <g id="mark">
+    <rect x="0" y="0" width="200" height="700" rx="10" fill="#342545"/>
+    <rect x="12" y="12" width="176" height="676" rx="6" fill="none" stroke="#D0AB75" stroke-width="2"/>
+    <circle cx="100" cy="130" r="40" fill="#F4EAD0"/>
+    <circle cx="118" cy="118" r="38" fill="#342545"/>
+    <g fill="#F4EAD0"><circle cx="50" cy="70" r="2.5"/><circle cx="150" cy="60" r="2"/><circle cx="160" cy="200" r="2.5"/><circle cx="40" cy="220" r="2"/><circle cx="70" cy="260" r="1.5"/><circle cx="140" cy="290" r="1.5"/></g>
+    <text x="100" y="380" text-anchor="middle" font-family="Georgia, serif" font-size="34" fill="#F4EAD0">Be still,</text>
+    <text x="100" y="424" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#F4EAD0">and know</text>
+    <text x="100" y="456" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#F4EAD0">that I am God.</text>
+    <text x="100" y="500" text-anchor="middle" font-family="Georgia, serif" font-size="14" letter-spacing="2" fill="#D0AB75">PSALM 46:10</text>
+    <path d="M100 560V640M80 590H120" stroke="#B8A4D1" stroke-width="2"/>
+  </g>
+  <use href="#mark" x="55" y="200"/>
+  <use href="#mark" x="325" y="200"/>
+  <use href="#mark" x="595" y="200"/>
+  <text x="425" y="140" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#77609B">Print on card stock, then cut along the outer edges.</text>
+  <text x="425" y="1060" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#9A8AAE">The Violet Sanctuary · free to print for personal use · Scripture: KJV</text>
+  <rect x="0" y="0" width="0" height="0"/>
+</svg>

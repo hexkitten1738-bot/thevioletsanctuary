@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="8.5in" height="11in" viewBox="0 0 850 1100">
+  <title>Lavender Lily Letter Paper – The Violet Sanctuary (free printable)</title>
+  <rect width="850" height="1100" fill="#FFFFFF"/>
+  <rect x="40" y="40" width="770" height="1020" fill="none" stroke="#B8A4D1" stroke-width="3"/>
+  <rect x="52" y="52" width="746" height="996" fill="none" stroke="#D0AB75" stroke-width="1"/>
+  <g stroke="#E3D8EE" stroke-width="1.2">
+    <path d="M110 260H740M110 304H740M110 348H740M110 392H740M110 436H740M110 480H740M110 524H740M110 568H740M110 612H740M110 656H740M110 700H740M110 744H740M110 788H740M110 832H740M110 876H740M110 920H740"/>
+  </g>
+  <g transform="translate(700 960)" fill="none" stroke="#77609B" stroke-width="2.5" stroke-linecap="round">
+    <path d="M0 60V10"/>
+    <path d="M0 10c-9-14-9-28 0-38 9 10 9 24 0 38z" fill="#EDE5F6"/>
+    <path d="M0 16c-14-5-28 0-33 14 14 5 26 0 33-14z" fill="#EDE5F6"/>
+    <path d="M0 16c14-5 28 0 33 14-14 5-26 0-33-14z" fill="#EDE5F6"/>
+    <path d="M0 44c-10-6-20-6-26 0"/>
+  </g>
+  <g fill="#D0AB75"><circle cx="425" cy="120" r="3"/><circle cx="405" cy="126" r="2"/><circle cx="445" cy="126" r="2"/></g>
+  <path d="M340 150H510" stroke="#B8A4D1" stroke-width="1"/>
+  <text x="425" y="1086" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#9A8AAE">The Violet Sanctuary · free to print for personal use</text>
+</svg>
